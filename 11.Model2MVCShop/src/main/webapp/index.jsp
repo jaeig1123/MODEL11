@@ -48,6 +48,31 @@
 			$("a[href='#' ]:contains('로 그 인')").on("click" , function() {
 				self.location = "/user/login"
 			});
+			
+			$( "a:contains('상품검색')").bind("click", function(){
+				$(self.location).attr("href","/product/listProduct?menu=search");
+			});
+			
+			$( "a:contains('개인정보조회')").bind("click", function(){
+				alert("로그인이 필요합니다.");
+			});
+			
+			$( "a:contains('회원정보조회')").bind("click", function(){
+				alert("로그인이 필요합니다.");
+			});
+			
+			$( "a:contains('판매상품등록')").bind("click", function(){
+				alert("로그인이 필요합니다.");
+			});
+			
+			$( "a:contains('판매상품관리')").bind("click", function(){
+				alert("로그인이 필요합니다.");
+			});
+			
+			$( "a:contains('구매이력조회')").bind("click", function(){
+				alert("로그인이 필요합니다.");
+			});
+			
 		});
 		
 	</script>	
